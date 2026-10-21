@@ -14,7 +14,7 @@ from shade_model import (solar_angles, build_shadow_union, build_tree_shadow_uni
                          combine_shadows, score_edges, calculate_routes, route_metrics, add_open_space_connections)
 
 st.set_page_config(page_title="ShadeRoute", page_icon="🌳", layout="wide")
-DATA_DIR = Path("data")
+DATA_DIR = Path(__file__).resolve().parent / "data"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 REPORTS_DB = DATA_DIR / "shaderoute_reports.sqlite"
 
