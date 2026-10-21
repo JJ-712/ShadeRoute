@@ -1,0 +1,15 @@
+SHADEROUTE QUICK INSTALL (Windows)
+
+1. Install Anaconda or Miniconda.
+2. Open Anaconda Prompt and navigate to the extracted project folder:
+   cd /d "your project folder path"
+3. Run:
+   conda env create -f environment.yml
+   conda activate shaderoute_clean
+   python download_data.py
+   python -m streamlit run app.py
+4. Open the local URL printed by Streamlit (usually http://localhost:8501).
+
+Open Planner → Database management to permanently delete all community reports if needed. This does not delete the walking-network or building/tree map files.
+
+Use the selected date and Malaysia time to simulate shade. For example, select 3:00 PM even if you are running the app at night.
